@@ -20,5 +20,5 @@ Scripts del proyecto Shell, basics.
 - **13-symbolic_link** — Crea el enlace simbólico __ls__ apuntando a /bin/ls en el cwd (ln -s).
 - **14-copy_html** — Copia los .html del cwd al directorio padre solo si no existen allí o el origen es más reciente (cp -u).
 - **15-lets_move** — Mueve al directorio /tmp/u los archivos cuyo nombre empieza por mayúscula (mv [[:upper:]]*).
-- **16-clean_emacs** — Elimina en el cwd todos los archivos cuyo nombre termina en ~ (copias de respaldo de Emacs).
+- **16-clean_emacs** — Elimina en el cwd los archivos cuyo nombre termina en ~ (rm -f *~, sin prompts y con código de salida adecuado).
 - **17-tree** — Crea welcome/, welcome/to/ y welcome/to/school con mkdir -p (script con solo dos espacios en total).
