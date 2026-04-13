@@ -11,3 +11,8 @@ Scripts del proyecto Shell, basics.
 - **4-listmorefiles** — Lista todo el contenido, incluidos archivos ocultos, en formato largo (ls -la).
 - **5-listfilesdigitonly** — Lista en formato largo, UID/GID numéricos y archivos ocultos (ls -na).
 - **6-firstdirectory** — Crea el directorio /tmp/my_first_directory.
+- **7-movethatfile** — Mueve /tmp/betty a /tmp/my_first_directory.
+- **8-firstdelete** — Elimina el archivo /tmp/my_first_directory/betty.
+- **9-firstdirdeletion** — Elimina el directorio vacío /tmp/my_first_directory.
+- **10-back** — Cambia al directorio de trabajo anterior (cd -; usar con source).
+- **11-lists** — Lista en formato largo y con ocultos el directorio actual, el padre y /boot (ls -al . .. /boot).
