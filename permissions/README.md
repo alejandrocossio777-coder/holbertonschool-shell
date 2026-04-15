@@ -1,23 +1,25 @@
-# Shell, permissions
+# Shell Permissions
 
-Scripts de Bash para el proyecto **Shell, permissions** (Holberton School), Ubuntu 22.04 LTS.
+This project covers Linux file permissions using bash scripts.
 
 ## Scripts
 
-- **0-iam_betty** — Cambia al usuario betty (su betty; 8 caracteres en el comando + newline).
-- **1-who_am_i** — Imprime el usuario efectivo (whoami).
-- **2-groups** — Imprime los grupos del usuario actual (groups).
-- **3-new_owner** — Propietario de hello → betty (chown betty hello); a menudo con sudo.
-- **4-empty** — Crea el archivo vacío hello (touch hello).
-- **5-execute** — Permisos de hello a 744 (chmod 744 hello).
-- **6-multiple_permissions** — Permisos de hello a 754 (chmod 754 hello).
-- **7-everybody** — Ejecución para todos (chmod a+x hello).
-- **8-James_Bond** — Permisos 007 solo para otros (chmod 007 hello).
-- **9-John_Doe** — Permisos 753 (chmod 753 hello).
-- **10-mirror_permissions** — Iguala permisos de hello a los de olleh (chmod --reference=olleh hello).
-- **11-directories_permissions** — Ejecución en directorios bajo el cwd, recursivo (chmod -R a+X .).
-- **12-directory_permissions** — Crea my_dir con modo 751 (mkdir -m 751 my_dir).
-- **13-change_group** — Grupo de hello → school (chgrp school hello).
-- **14-change_owner_and_group** — Propietario y grupo vincent:staff en todos los archivos del cwd (chown vincent:staff *).
-- **15-symbolic_link_permissions** — Cambia dueño del enlace _hello, no del destino (chown -h vincent:staff _hello).
-- **16-if_only** — Si hello es de guillaume, pasa a vincent (chown --from=guillaume vincent hello).
+| File | Description |
+|------|-------------|
+| `0-iam_betty` | Switches current user to betty |
+| `1-who_am_i` | Prints the effective username of the current user |
+| `2-groups` | Prints all groups the current user belongs to |
+| `3-new_owner` | Changes the owner of file hello to betty |
+| `4-empty` | Creates an empty file called hello |
+| `5-execute` | Adds execute permission to the owner of hello |
+| `6-multiple_permissions` | Adds execute to owner/group, read to others on hello |
+| `7-everybody` | Adds execute permission to owner, group and others on hello |
+| `8-James_Bond` | Sets hello permissions: no perms for owner/group, all for others |
+| `9-John_Doe` | Sets hello permissions to -rwxr-x-wx |
+| `10-mirror_permissions` | Sets hello permissions to match olleh's permissions |
+| `11-directories_permissions` | Adds execute permission to all subdirectories |
+| `12-directory_permissions` | Creates directory my_dir with permissions 751 |
+| `13-change_group` | Changes group owner of hello to school |
+| `14-change_owner_and_group` | Changes owner to vincent and group to staff for all files |
+| `15-symbolic_link_permissions` | Changes owner and group of symbolic link _hello |
+| `16-if_only` | Changes owner of hello to vincent only if owned by guillaume |
